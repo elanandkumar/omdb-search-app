@@ -1,6 +1,6 @@
 document.getElementById('search_btn').addEventListener('click', function(){
 	var title = document.getElementById('title_text').value;
-	var request = new Request('http://www.omdbapi.com/?apikey=4dd3fc90&s='+title);
+	var request = new Request('https://www.omdbapi.com/?apikey=4dd3fc90&s='+title);
 	fetch(request).then(function(result){
 		return result.json();
 	}).then(function(data){
